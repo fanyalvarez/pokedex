@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.pokedex {
+  width: 22rem;
+  height: 35rem;
+  background-color: rgb(116, 203, 72);
+  border-radius: 8px;
+  padding: 0.3rem;
+}
+.pokedex .top {
+  height: 40%;
+  padding: 0.5rem;
+  background: url(/img/pokeball.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.pokedex .top .top-bar {
+  justify-content: space-between;
+  color: wheat;
+  padding: 0 1.2rem;
+}
+.pokedex .top .top-bar .search {
+  color: wheat;
+  background: none;
+  border: none;
+  width: 60%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.pokedex .top .top-bar .search:focus {
+  outline: none;
+}
+.pokedex .top .poke-img {
+  justify-content: center;
+}
+.pokedex .top .poke-img img {
+  width: 200px;
+  height: 200px;
+  transform: translateY(1.5rem);
+}
+.pokedex .data {
+  background-color: wheat;
+  height: 60%;
+  border-radius: 8px;
+  padding-top: 4.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.pokedex .data .types {
+  gap: 1rem;
+}
+.pokedex .data .types span {
+  color: wheat;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.pokedex .data h4 {
+  text-align: center;
+  color: rgb(116, 203, 72);
+}
+.pokedex .data .stats {
+  width: 80%;
+  font-size: 0.8rem;
+  gap: 0.6rem;
+}
+.pokedex .data .stats .stat .stat-desc {
+  color: rgb(116, 203, 72);
+  font-weight: bold;
+  text-align: right;
+  padding-right: 0.6rem;
+  border-right: 1px solid gray;
+  width: 15%;
+}
+.pokedex .data .stats .stat .stat-number {
+  width: 15%;
+  padding-left: 0.6rem;
+}
+.pokedex .data .stats .stat .stat-bar {
+  width: 70%;
+  align-items: center;
+}
+.pokedex .data .stats .stat .stat-bar .outer {
+  background-color: rgba(116, 203, 72, 0.3);
+  width: 100%;
+  height: 0.3rem;
+  border-radius: 4px;
+}
+.pokedex .data .stats .stat .stat-bar .outer .inner {
+  background-color: rgb(116, 203, 72);
+  border-radius: 4px;
+  width: 40%;
+}/*# sourceMappingURL=style.css.map */
