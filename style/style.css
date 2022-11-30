@@ -34,7 +34,7 @@ body {
   color: wheat;
   padding: 0 1.2rem;
 }
-.pokedex .top .top-bar .search {
+.pokedex .top .top-bar #search {
   color: wheat;
   background: none;
   border: none;
@@ -42,8 +42,10 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.pokedex .top .top-bar .search:focus {
+.pokedex .top .top-bar #search:focus {
   outline: none;
+  box-shadow: 0 2px #b9b8b8;
+  border-radius: 2px;
 }
 .pokedex .top .poke-img {
   justify-content: center;
