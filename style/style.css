@@ -21,6 +21,7 @@ body {
   background-color: rgb(116, 203, 72);
   border-radius: 8px;
   padding: 0.3rem;
+  transition: background-color 0.5s ease-in-out;
 }
 .pokedex .top {
   height: 40%;
@@ -41,6 +42,7 @@ body {
   width: 60%;
   font-size: 1.2rem;
   font-weight: bold;
+  text-transform: capitalize;
 }
 .pokedex .top .top-bar #search:focus {
   outline: none;
@@ -56,7 +58,7 @@ body {
   transform: translateY(1.5rem);
 }
 .pokedex .data {
-  background-color: wheat;
+  background-color: rgb(213, 205, 190);
   height: 60%;
   border-radius: 8px;
   padding-top: 4.5rem;
@@ -76,6 +78,7 @@ body {
 .pokedex .data h4 {
   text-align: center;
   color: rgb(116, 203, 72);
+  transition: color 0.5s ease-in-out;
 }
 .pokedex .data .stats {
   width: 80%;
@@ -83,29 +86,32 @@ body {
   gap: 0.6rem;
 }
 .pokedex .data .stats .stat .stat-desc {
+  width: 13%;
   color: rgb(116, 203, 72);
   font-weight: bold;
   text-align: right;
-  padding-right: 0.6rem;
-  border-right: 1px solid gray;
-  width: 15%;
+  margin-right: 0.6rem;
 }
 .pokedex .data .stats .stat .stat-number {
-  width: 15%;
-  padding-left: 0.6rem;
+  width: 13%;
+  border-left: 1px solid gray;
+  text-align: right;
 }
 .pokedex .data .stats .stat .stat-bar {
-  width: 70%;
+  width: 76%;
   align-items: center;
+  padding-left: 0.6rem;
 }
 .pokedex .data .stats .stat .stat-bar .outer {
   background-color: rgba(116, 203, 72, 0.3);
+  display: flex;
   width: 100%;
   height: 0.3rem;
   border-radius: 4px;
+  transition: background-color 0.5s ease-in-out;
 }
 .pokedex .data .stats .stat .stat-bar .outer .inner {
   background-color: rgb(116, 203, 72);
   border-radius: 4px;
-  width: 40%;
+  transition: width 0.5s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
