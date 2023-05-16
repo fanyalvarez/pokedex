@@ -11,7 +11,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+}
+
+h2{
+  font-size: 2.5rem;
+  color:bisque;
+  margin-bottom: 5.5rem;
+  margin-top: 0;
+}
+
+option{
+  color: black;
 }
 
 .flex {

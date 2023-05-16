@@ -32,9 +32,12 @@ const typeColors = {
 
 const fetchApi = async (name) => {
   const pokemonName = name.split(" ").join("-");
+  console.log(pokemonName)
   const response = await fetch(
     "https://pokeapi.co/api/v2/pokemon/" + pokemonName
   );
+
+  
 
   if (response.status === 200) {
     const pokemonData = await response.json();

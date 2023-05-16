@@ -1,94 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pokedex</title>
-    <link rel="stylesheet" href="/style/style.css" />
-  </head>
-  <body>
-    <div class="pokedex">
-      <div class="top">
-        <div class="top-bar flex">
-          <input type="text" id="search" value="Bulbasaur" />
-          <span id="number">#0001</span>
-        </div>
 
-        <div class="poke-img flex">
-          <img src="/img/1.png" id="poke-img" alt="pokemon-img" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pokedex</title>
+  <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body>
+
+  <h2>Selecciona un pokemon</h2>
+  
+  <div class="pokedex">
+    <div class="top">
+      <div class="top-bar flex">
+        <!-- <input type="text" id="search" value="Bulbasaur" /> -->
+
+        <select type="text" name="pokemon" id="search">
+          <option value="bulbasaur">bulbasaur</option>
+          <option value="abra">abra</option>
+          <option value="aerodactyl">aerodactyl</option>
+          <option value="alakazam">alakazam</option>
+          <option value="arbok">arbok</option>
+          <option value="arcanine">arcanine</option>
+          <option value="articuno">articuno</option>
+          <option value="beedrill">beedrill</option>
+          <option value="bellsprout">bellsprout</option>
+          <option value="blastoise">blastoise</option>
+          <option value="bulbasaur">bulbasaur</option>
+          <option value="butterfree">butterfree</option>
+          <option value="caterpie">caterpie</option>
+          <option value="chansey">chansey</option>
+          <option value="charizard">charizard</option>
+          <option value="charmander">charmander</option>
+          <option value="charmeleon">charmeleon</option>
+          <option value="clefable">clefable</option>
+          <option value="clefairy">clefairy</option>
+          <option value="cloyster">cloyster</option>
+          <option value="cubone">cubone</option>
+          <option value="dewgong">dewgong</option>
+          <option value="diglett">diglett</option>
+          <option value="ditto">ditto</option>
+          <option value="dodrio">dodrio</option>
+          <option value="doduo">doduo</option>
+          <option value="dragonair">dragonair</option>
+          <option value="dragonite">dragonite</option>
+          <option value="dratini">dratini</option>
+          <option value="drowzee">drowzee</option>
+          <option value="dugtrio">dugtrio</option>
+          <option value="eevee">eevee</option>
+          <option value="ekans">ekans</option>
+          <option value="electabuzz">electabuzz</option>
+          <option value="electrode">electrode</option>
+          <option value="exeggcute">exeggcute</option>
+          <option value="exeggutor">exeggutor</option>
+          <option value="farfetch'd">farfetch'd</option>
+          <option value="fearow">fearow</option>
+          <option value="flareon">flareon</option>
+          <option value="gastly">gastly</option>
+          <option value="gengar">gengar</option>
+          <option value="geodude">geodude</option>
+          <option value="gloom">gloom</option>
+          <option value="golbat">golbat</option>
+          <option value="goldeen">goldeen</option>
+          <option value="golduck">golduck</option>
+          <option value="golem">golem</option>
+          <option value="graveler">graveler</option>
+          <option value="grimer">grimer</option>
+          <option value="growlithe">growlithe</option>
+          <option value="gyarados">gyarados</option>
+          <option value="haunter">haunter</option>
+          <option value="hitmonchan">hitmonchan</option>
+          <option value="hitmonlee">hitmonlee</option>
+          <option value="horsea">horsea</option>
+          <option value="hypno">hypno</option>
+          <option value="ivysaur">ivysaur</option>
+          <option value="jigglypuff">jigglypuff</option>
+          <option value="jolteon">jolteon</option>
+          <option value="jynx">jynx</option>
+          <option value="kabuto">kabuto</option>
+          <option value="kabutops">kabutops</option>
+          <option value="kadabra">kadabra</option>
+          <option value="kakuna">kakuna</option>
+          <option value="kangaskhan">kangaskhan</option>
+          <option value="kingler">kingler</option>
+          <option value="koffing">koffing</option>
+          <option value="krabby">krabby</option>
+          <option value="lapras">lapras</option>
+          <option value="lickitung">lickitung</option>
+          <option value="machamp">machamp</option>
+          <option value="machoke">machoke</option>
+          <option value="machop">machop</option>
+          <option value="magikarp">magikarp</option>
+          <option value="magmar">magmar</option>
+          <option value="magnemite">magnemite</option>
+          <option value="magneton">magneton</option>
+          <option value="mankey">mankey</option>
+          <option value="marowak">marowak</option>
+          <option value="meowth">meowth</option>
+          <option value="metapod">metapod</option>
+          <option value="mew">mew</option>
+          <option value="mewtwo">mewtwo</option>
+          <option value="moltres">moltres</option>
+          <option value="mr. mime">mr. mime</option>
+          <option value="muk">muk</option>
+          <option value="nidoking">nidoking</option>
+          <option value="nidoqueen">nidoqueen</option>
+          <option value="nidoran">nidoran</option>
+          <option value="nidorina">nidorina</option>
+          <option value="nidorino">nidorino</option>
+          <option value="ninetales">ninetales</option>
+          <option value="oddish">oddish</option>
+          <option value="omanyte">omanyte</option>
+          <option value="omastar">omastar</option>
+          <option value="onix">onix</option>
+          <option value="paras">paras</option>
+          <option value="parasect">parasect</option>
+          <option value="persian">persian</option>
+          <option value="pidgeot">pidgeot</option>
+          <option value="pidgeotto">pidgeotto</option>
+          <option value="pidgey">pidgey</option>
+          <option value="pikachu">pikachu</option>
+          <option value="pinsir">pinsir</option>
+          <option value="poliwag">poliwag</option>
+          <option value="poliwhirl">poliwhirl</option>
+          <option value="poliwrath">poliwrath</option>
+          <option value="ponyta">ponyta</option>
+          <option value="porygon">porygon</option>
+          <option value="primeape">primeape</option>
+          <option value="psyduck">psyduck</option>
+          <option value="raichu">raichu</option>
+          <option value="rapidash">rapidash</option>
+          <option value="raticate">raticate</option>
+          <option value="rattata">rattata</option>
+          <option value="rhydon">rhydon</option>
+          <option value="rhyhorn">rhyhorn</option>
+          <option value="sandshrew">sandshrew</option>
+          <option value="sandslash">sandslash</option>
+          <option value="scyther">scyther</option>
+          <option value="seadra">seadra</option>
+          <option value="seaking">seaking</option>
+          <option value="seel">seel</option>
+          <option value="shellder">shellder</option>
+          <option value="slowbro">slowbro</option>
+          <option value="slowpoke">slowpoke</option>
+          <option value="snorlax">snorlax</option>
+          <option value="spearow">spearow</option>
+          <option value="squirtle">squirtle</option>
+          <option value="starmie">starmie</option>
+          <option value="staryu">staryu</option>
+          <option value="tangela">tangela</option>
+          <option value="tauros">tauros</option>
+          <option value="tentacool">tentacool</option>
+          <option value="tentacruel">tentacruel</option>
+          <option value="vaporeon">vaporeon</option>
+          <option value="venomoth">venomoth</option>
+          <option value="venonat">venonat</option>
+          <option value="venusaur">venusaur</option>
+          <option value="victreebel">victreebel</option>
+          <option value="vileplume">vileplume</option>
+          <option value="voltorb">voltorb</option>
+          <option value="vulpix">vulpix</option>
+          <option value="wartortle">wartortle</option>
+          <option value="weedle">weedle</option>
+          <option value="weepinbell">weepinbell</option>
+          <option value="weezing">weezing</option>
+          <option value="wigglytuff">wigglytuff</option>
+          <option value="zapdos">zapdos</option>
+          <option value="zubat">zubat</option>
+        </select>
+
+        <span id="number">#0001</span>
       </div>
 
-      <div class="data flex">
-        <div id="types" class="types flex">
-          <span style="background-color: rgb(116, 203, 72)" id="type"
-            >Grass</span
-          >
-          <span style="background-color: rgb(164, 62, 158)" id="type"
-            >Poison</span
-          >
-        </div>
-        <h4 id="base-stats" style="color:rgb(116,203,72)">base stats</h4>
+      <div class="poke-img flex">
+        <img src="/img/1.png" id="poke-img" alt="pokemon-img" />
+      </div>
+    </div>
 
-        <div class="stats">
-          <div class="stat flex">
-            <div class="stat-desc">HP</div>
-            <div class="stat-number">045</div>
-            <div class="stat-bar flex">
-              <div class="outer flex">
-                <div class="inner" style="width: 45%"></div>
-              </div>
+    <div class="data flex">
+      <div id="types" class="types flex">
+        <span style="background-color: rgb(116, 203, 72)" id="type">Grass</span>
+        <span style="background-color: rgb(164, 62, 158)" id="type">Poison</span>
+      </div>
+      <h4 id="base-stats" style="color:rgb(116,203,72)">base stats</h4>
+
+      <div class="stats">
+        <div class="stat flex">
+          <div class="stat-desc">HP</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar flex">
+            <div class="outer flex">
+              <div class="inner" style="width: 45%"></div>
             </div>
           </div>
-          <div class="stat flex">
-            <div class="stat-desc">ATK</div>
-            <div class="stat-number">049</div>
-            <div class="stat-bar flex">
-              <div class="outer flex">
-                <div class="inner" style="width: 49%"></div>
-              </div>
+        </div>
+        <div class="stat flex">
+          <div class="stat-desc">ATK</div>
+          <div class="stat-number">049</div>
+          <div class="stat-bar flex">
+            <div class="outer flex">
+              <div class="inner" style="width: 49%"></div>
             </div>
           </div>
-          <div class="stat flex">
-            <div class="stat-desc">DEF</div>
-            <div class="stat-number">049</div>
-            <div class="stat-bar flex">
-              <div class="outer flex">
-                <div class="inner" style="width: 49%"></div>
-              </div>
+        </div>
+        <div class="stat flex">
+          <div class="stat-desc">DEF</div>
+          <div class="stat-number">049</div>
+          <div class="stat-bar flex">
+            <div class="outer flex">
+              <div class="inner" style="width: 49%"></div>
             </div>
           </div>
-          <div class="stat flex">
-            <div class="stat-desc">STAK</div>
-            <div class="stat-number">065</div>
-            <div class="stat-bar flex">
-              <div class="outer flex">
-                <div class="inner" style="width: 65%"></div>
-              </div>
+        </div>
+        <div class="stat flex">
+          <div class="stat-desc">STAK</div>
+          <div class="stat-number">065</div>
+          <div class="stat-bar flex">
+            <div class="outer flex">
+              <div class="inner" style="width: 65%"></div>
             </div>
           </div>
-          <div class="stat flex">
-            <div class="stat-desc">SDEF</div>
-            <div class="stat-number">065</div>
-            <div class="stat-bar flex">
-              <div class="outer flex">
-                <div class="inner" style="width: 65%"></div>
-              </div>
+        </div>
+        <div class="stat flex">
+          <div class="stat-desc">SDEF</div>
+          <div class="stat-number">065</div>
+          <div class="stat-bar flex">
+            <div class="outer flex">
+              <div class="inner" style="width: 65%"></div>
             </div>
           </div>
-          <div class="stat flex">
-            <div class="stat-desc">SPD</div>
-            <div class="stat-number">045</div>
-            <div class="stat-bar flex">
-              <div class="outer flex">
-                <div class="inner" style="width: 45%"></div>
-              </div>
+        </div>
+        <div class="stat flex">
+          <div class="stat-desc">SPD</div>
+          <div class="stat-number">045</div>
+          <div class="stat-bar flex">
+            <div class="outer flex">
+              <div class="inner" style="width: 45%"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="/script/script.js"></script>
-  </body>
+  </div>
+  <script src="/script/script.js"></script>
+</body>
+
 </html>
